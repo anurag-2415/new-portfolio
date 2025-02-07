@@ -37,7 +37,7 @@ portfolio-website/
 ## 🛠️ Setup & Installation
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/anurag-2415/portfolio-website.git
+   git clone https://github.com/yourusername/portfolio-website.git
    cd portfolio-website
    ```
 2. **Open `index.html`** in your browser or use **Live Server** in VS Code.
