@@ -563,109 +563,153 @@
         
             <section class="Skills">
                 <h3 class="h3 skills-title">Certificates</h3>
-                <ul class="project-list">
-                    <li class="project-item  active">
-                        <a href="./assets/images/c_sharp_basic.png">
-                    
+                <!-- Filter Buttons (like in Projects section) -->
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <button class="active" data-cert-filter-btn>All</button>
+                    </li>
+                    <li class="filter-item">
+                        <button data-cert-filter-btn>GeeksforGeeks</button>
+                    </li>
+                    <li class="filter-item">
+                        <button data-cert-filter-btn>HackerRank</button>
+                    </li>
+                </ul>
+                
+                <!-- Filter Dropdown -->
+                <div class="filter-select-box">
+                    <button class="filter-select" data-cert-select>
+                        <div class="select-value" data-cert-select-value>Select category</div>
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+                    </button>
+                    <ul class="select-list">
+                        <li class="select-item">
+                            <button data-cert-select-item>All</button>
+                        </li>
+                        <li class="select-item">
+                            <button data-cert-select-item>GeeksforGeeks</button>
+                        </li>
+                        <li class="select-item">
+                            <button data-cert-select-item>HackerRank</button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Certificate Tiles -->
+                <ul class="project-list" id="certificateList">
+                    <li class="project-item active" data-cert-item data-category="GeeksforGeeks">
+                        <a href="./assets/images/GFG_Certificate_Final.jpg">
                             <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-                    
-                                <img src="./assets/images/c_sharp_basic.png" alt="finance" loading="lazy">
+                                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                                <img src="./assets/images/GFG_Certificate_Final.jpg" alt="C#" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">GeeksforGeeks</h3>
+                        </a>
+                    </li>
+
+                    <li class="project-item active" data-cert-item data-category="HackerRank">
+                        <a href="./assets/images/c_sharp_basic.png">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                                <img src="./assets/images/c_sharp_basic.png" alt="C#" loading="lazy">
                             </figure>
                             <h3 class="project-title">C# (Basic)</h3>
+
+                            <p class="project-category">HackerRank</p>
+
                         </a>
                     </li>
-                    <li class="project-item  active">
-                        <a href="./assets/images/css_basic.jpg" target="_blank">
-        
+                
+                    <li class="project-item active" data-cert-item data-category="HackerRank">
+                        <a href="./assets/images/css_basic.png">
                             <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-        
-                                <img src="./assets/images/css_basic.png" alt="orizon" loading="lazy">
+                                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                                <img src="./assets/images/css_basic.png" alt="CSS" loading="lazy">
                             </figure>
                             <h3 class="project-title">CSS (Basic)</h3>
+
+                            <p class="project-category">HackerRank</p>
+
                         </a>
                     </li>
-                    <li class="project-item  active">
-                        <a href="./assets/images/javascript_basic.png" target="_blank">
-        
+                
+                    <li class="project-item active" data-cert-item data-category="HackerRank">
+                        <a href="./assets/images/javascript_basic.png">
                             <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-        
-                                <img src="./assets/images/javascript_basic.png" alt="orizon" loading="lazy">
+                                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                                <img src="./assets/images/javascript_basic.png" alt="JavaScript" loading="lazy">
                             </figure>
-                            <h3 class="project-title">Javascript (Basic)</h3>
+                            <h3 class="project-title">JavaScript (Basic)</h3>
+
+                            <p class="project-category">HackerRank</p>
+
                         </a>
                     </li>
-                    <li class="project-item  active">
-                        <a href="./assets/images/python_basic.png" target="_blank">
-        
+                
+                    <li class="project-item active" data-cert-item data-category="HackerRank">
+                        <a href="./assets/images/python_basic.png">
                             <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-        
-                                <img src="./assets/images/python_basic.png" alt="orizon" loading="lazy">
+                                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                                <img src="./assets/images/python_basic.png" alt="Python" loading="lazy">
                             </figure>
                             <h3 class="project-title">Python (Basic)</h3>
+
+                            <p class="project-category">HackerRank</p>
+
                         </a>
                     </li>
-                    <li class="project-item  active">
-                        <a href="./assets/images/problem_solving_basic.png" target="_blank">
-        
+                
+                    <li class="project-item active" data-cert-item data-category="HackerRank">
+                        <a href="./assets/images/sql_basic.png">
                             <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-        
-                                <img src="./assets/images/problem_solving_basic.png" alt="orizon" loading="lazy">
-                            </figure>
-                            <h3 class="project-title">Problem Solving (Basic)</h3>
-                        </a>
-                    </li>
-                    <li class="project-item  active">
-                        <a href="./assets/images/problem_solving_intermediate.png" target="_blank">
-        
-                            <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-        
-                                <img src="./assets/images/problem_solving_intermediate.png" alt="orizon" loading="lazy">
-                            </figure>
-                            <h3 class="project-title">Problem Solving (Intermediate)</h3>
-                        </a>
-                    </li>
-                    <li class="project-item  active">
-                        <a href="./assets/images/sql_basic.png" target="_blank">
-        
-                            <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-        
-                                <img src="./assets/images/sql_basic.png" alt="orizon" loading="lazy">
+                                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                                <img src="./assets/images/sql_basic.png" alt="SQL" loading="lazy">
                             </figure>
                             <h3 class="project-title">SQL (Basic)</h3>
+
+                            <p class="project-category">HackerRank</p>
+
                         </a>
                     </li>
-                    <li class="project-item  active">
-                        <a href="./assets/images/sql_intermediate.png" target="_blank">
-        
+                
+                    <li class="project-item active" data-cert-item data-category="HackerRank">
+                        <a href="./assets/images/sql_intermediate.png">
                             <figure class="project-img">
-                                <div class="project-item-icon-box">
-                                    <ion-icon name="eye-outline"></ion-icon>
-                                </div>
-        
-                                <img src="./assets/images/sql_intermediate.png" alt="orizon" loading="lazy">
+                                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                                <img src="./assets/images/sql_intermediate.png" alt="SQL" loading="lazy">
                             </figure>
                             <h3 class="project-title">SQL (Intermediate)</h3>
+
+                            <p class="project-category">HackerRank</p>
+
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-cert-item data-category="HackerRank">
+                        <a href="./assets/images/problem_solving_basic.png">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                                <img src="./assets/images/problem_solving_basic.png" alt="Problem Solving" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Problem Solving (Basic)</h3>
+
+                            <p class="project-category">HackerRank</p>
+
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-cert-item data-category="HackerRank">
+                        <a href="./assets/images/problem_solving_intermediate.png">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                                <img src="./assets/images/problem_solving_intermediate.png" alt="Problem Solving" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Problem Solving (Intermediate)</h3>
+
+                            <p class="project-category">HackerRank</p>
+
                         </a>
                     </li>
                 </ul>
